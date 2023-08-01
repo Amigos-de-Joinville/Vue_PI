@@ -15,15 +15,27 @@
               class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
             >
               <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-              <button type="button" class="btn btn-primary btn-floating mx-1">
+              <button
+                type="button"
+                class="btn btn-primary btn-floating mx-1"
+                style="background-color: #f7559a; border: #f7559a"
+              >
                 <i class="fab fa-facebook-f"></i>
               </button>
 
-              <button type="button" class="btn btn-primary btn-floating mx-1">
+              <button
+                type="button"
+                class="btn btn-primary btn-floating mx-1"
+                style="background-color: #f7559a; border: #f7559a"
+              >
                 <i class="fab fa-twitter"></i>
               </button>
 
-              <button type="button" class="btn btn-primary btn-floating mx-1">
+              <button
+                type="button"
+                class="btn btn-primary btn-floating mx-1"
+                style="background-color: #f7559a; border: #f7559a"
+              >
                 <i class="fab fa-linkedin-in"></i>
               </button>
             </div>
@@ -76,7 +88,12 @@
               <button
                 type="button"
                 class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem"
+                style="
+                  padding-left: 2.5rem;
+                  padding-right: 2.5rem;
+                  background-color: #f7559a;
+                  border: #f7559a;
+                "
               >
                 Login
               </button>
@@ -90,10 +107,17 @@
       </div>
     </div>
     <div
-      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary oi"
+      style="
+        background-color: #f7559a;
+        border: #f7559a;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+      "
+      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5"
     >
       <!-- Copyright -->
-      <div class="text-white mb-3 mb-md-0">
+      <div style="align-content: center ;text-align: center" class="text-white mb-3 mb-md-0">
         Copyright © 2020. All rights reserved.
       </div>
       <!-- Copyright -->
@@ -125,5 +149,4 @@ template {
   padding-top: 30px;
   width: 100%;
 }
-
 </style>
