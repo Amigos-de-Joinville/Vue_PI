@@ -148,7 +148,20 @@
   <template />
 </template>
 <style scoped>
-/* @import '~mdb-ui-kit/css/mdb.min.css'; */
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.form-outline .form-control {
+  min-height: auto;
+  padding: 0.32rem 0.75rem;
+  border: 1;
+  background: transparent;
+  transition: all 0.2s linear;
+}
 
 template {
   padding-top: 30px;

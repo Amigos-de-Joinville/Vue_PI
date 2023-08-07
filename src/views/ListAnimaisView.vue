@@ -1,5 +1,6 @@
 <script setup>
 import CabecalhoComp from "@/components/CabecalhoComp.vue";
+import ButtomComp from "@/components/ButtomComp.vue";
 </script>
 <template>
   <CabecalhoComp></CabecalhoComp>
@@ -20,7 +21,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>
     <div class="col">
@@ -39,7 +42,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -57,7 +62,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -75,7 +82,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -93,9 +102,12 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
-    </div>   <div class="col">
+    </div>   
+    <div class="col">
       <div class="card h-100">
         <img
           src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
@@ -111,7 +123,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -129,7 +143,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -147,7 +163,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -165,7 +183,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -183,7 +203,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -201,7 +223,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>   <div class="col">
       <div class="card h-100">
@@ -219,7 +243,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
+          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
         </div>
+        <ButtomComp></ButtomComp>
       </div>
     </div>
   </div>
