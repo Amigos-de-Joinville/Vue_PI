@@ -19,7 +19,7 @@ header,
 footer {
   background-color: rgb(126, 73, 126);
   color: white;
-  height: 15%;
+  height: 10%;
   font-size: 1.3rem;
   display: flex;
   align-items: center;

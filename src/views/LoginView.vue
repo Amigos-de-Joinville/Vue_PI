@@ -4,7 +4,7 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
           <img
-            src="@/assets/images/adj.png"
+            src="@/assets/images/pi.png"
             class="img-fluid"
             alt="Sample image"
           />
@@ -83,7 +83,7 @@
             </div>
 
             <div class="text-center text-lg-start mt-4 pt-2">
-              <router-link to="/experimento" custom v-slot="{ navigate }">
+              <router-link to="/listanimais" custom v-slot="{ navigate }">
                 <button
                   @click="navigate"
                   role="link"
