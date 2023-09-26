@@ -1,35 +1,36 @@
-# Projeto-Netflix
+# Mobile_PI
+<p align="justify">Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari.
 
-This template should help get you started developing with Vue 3 in Vite.
+# Amigos de Joinville
+<img width="200" src="logo.png">
+<p align="justify">Ana Paula e Ana Luiza são duas amigas que sempre amaram os animais. Resgatando um gato ou um cachorro de vez em quando, elas decidiram realizar um sonho antigo. Em 2021, elas inauguraram uma ONG para adoção de animais em Joinville e região, para ajudar os animais que foram abandonados ou estão perdidos a acharem um lar. A ONG “Amigos de Joinville”, é divulgada somente em suas redes sociais (Instagram e Facebook). Com a grande repercussão da ONG, foi vista uma necessidade da criação de um site, para ter o melhor controle dos animais e das adoções, e fazer a avaliação dos tutores para assim realizar a possível adoção.
 
-## Recommended IDE Setup
+## Telas
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<p align="justify">Tela Inicial de Login: O ponto de entrada para os usuários, onde podem futuramente fazer login ou criar uma conta.<br>
+Tela de Perfil: Permite aos usuários personalizar informações pessoais e preferências de adoção. <br>
+Tela Home: Mostra atividades recentes relacionadas à adoção de animais, notícias e eventos.  <br>
+Tela de Adoção de Cachorros e Gatos: Apresenta detalhes de animais disponíveis para adoção, incluindo fotos, descrições e informações de contato.
 
-## Customize configuration
+## Alunas
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/aanappaula">
+        <img src="anap.jpg" width="100px;"/><br>
+        <sub>
+          <b>Ana Paula de Souza</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AnaLuizaDias">
+        <img src="analu.jpg" width="100px;"/><br>
+        <sub>
+          <b>Ana Luiza Dias da Rocha</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
