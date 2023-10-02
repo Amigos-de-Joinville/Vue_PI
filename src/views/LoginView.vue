@@ -159,7 +159,7 @@
   min-height: auto;
   padding: 0.32rem 0.75rem;
   border: 1;
-  background: transparent;
+  background-color:#faedf5;
   transition: all 0.2s linear;
 }
 

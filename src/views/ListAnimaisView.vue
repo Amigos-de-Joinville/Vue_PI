@@ -1,254 +1,56 @@
 <script setup>
+import axios from "axios";
+import { ref, onMounted } from "vue";
+
 import CabecalhoComp from "@/components/CabecalhoComp.vue";
 import ButtomComp from "@/components/ButtomComp.vue";
+
+const animais = ref([]);
+
+const buscarAnimais = async () => {
+  try {
+    const resposta = await axios.get(
+      "https://django-pi-j444-dev.fl0.io/animais/"
+    );
+    animais.value = resposta.data;
+  } catch (erro) {
+    console.error(erro);
+  }
+};
+
+onMounted(() => {
+  buscarAnimais();
+});
 </script>
-<template>
+<template >
   <CabecalhoComp></CabecalhoComp>
-  <div style="padding: 200px" class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="row row-cols-1 row-cols-md-4 g-4" v-for="animal in animais"
+    :key="animal.id"
+    style="padding: 200px"
+    display="flex" >
     <div class="col">
       <div class="card h-100">
         <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+          :src="animal.foto"
           class="card-img-top"
           alt="Los Angeles Skyscrapers"
         />
         <div class="card-body">
-          <h5 class="card-title">Cachorro</h5>
+          <h5 class="card-title">{{ animal.nome }}</h5>
           <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
+            {{ animal.raca }}
           </p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
+          <i style="padding-left: 160px" class="far fa-heart fa-2x"></i>
         </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Gato</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Calopsita</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Cachorro</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Calopsita</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   
-    <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Calopsita</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Cachorro</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Gato</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Calopsita</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Gato</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Gato</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
-      </div>
-    </div>   <div class="col">
-      <div class="card h-100">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-          class="card-img-top"
-          alt="Los Angeles Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Cachorro</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado à 2 dias</small>
-          <i style="padding-left: 160px;" class="far fa-heart fa-2x"></i>
-        </div>
+        
         <ButtomComp></ButtomComp>
       </div>
     </div>
   </div>
+
 </template>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
@@ -266,4 +68,5 @@ h1 {
 .according-button {
   color: yellow;
 }
+
 </style>

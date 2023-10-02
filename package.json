@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "axios": "^1.5.1",
     "mdb-ui-kit": "^6.4.0",
     "pinia": "^2.0.21",
     "vue": "^3.2.38",
