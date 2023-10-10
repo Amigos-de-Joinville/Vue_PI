@@ -25,59 +25,56 @@ onMounted(() => {
 
 <template>
   <CabecalhoComp></CabecalhoComp>
-  <main class="main"  >
-  <div class="scroll-view">
-  <div class="row row-cols-3 row-cols-md-6 g-6" style="padding-top: 20px">
-    <div v-for="animal in animais" :key="animal.id" class="col">
-      <div class="card h-100">
-        <img
-          :src="animal.foto"
-          class="foto"
-          alt="Foto do animal"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ animal.nome }}</h5>
-          <p class="card-text">{{ animal.raca }}</p>
+  <main class="main">
+    <div class="scroll-view">
+      <div class="card2 row row-cols-3 row-cols-md-4 g-4" >
+        <div v-for="animal in animais" :key="animal.id" class="card1 col">
+          <div  class="card1 card h-100">
+            <img src="animal.foto" class="foto" alt="Foto do animal" />
+            <div class="card-body">
+              <h5 class="card-title">{{ animal.nome }}</h5>
+              <p class="card-text">{{ animal.raca }}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Atualizado há 2 dias</small>
+            </div>
+            <ButtomComp :animal="animal" />
+          </div>
         </div>
-        <div class="card-footer">
-          <small class="text-muted">Atualizado há 2 dias</small>
-          <i style="padding-left: 160px" class="far fa-heart fa-2x"></i>
-        </div>
-        <ButtomComp></ButtomComp>
       </div>
     </div>
-  </div>
-  </div>
   </main>
 </template>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-.video {
-  padding-left: 400px;
-  padding-top: 50px;
-}
-h1 {
-  font-family: "Bangers", cursive;
-  color: rgb(43, 43, 43);
-}
+
+
 .ordem {
   padding: 50px;
 }
 .according-button {
   color: yellow;
 }
-.foto{
+.foto {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-.scroll-view{
-  padding-top: 20px;
-}
-.main{
+.scroll-view {
   padding-top: 70px;
-  height: 50px;
-  width: ;
 }
+.main {
+  margin-left: 170px;
+  padding-top: 70px;
+  height: 30px;
+  width: 80%;
+  padding-top: 50px;
+}
+.card1{
+  padding:20px;
+  padding-top: 10px;
+ 
+}
+
 </style>
