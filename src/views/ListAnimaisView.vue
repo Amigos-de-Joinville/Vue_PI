@@ -30,7 +30,7 @@ onMounted(() => {
       <div class="card2 row row-cols-3 row-cols-md-4 g-4" >
         <div v-for="animal in animais" :key="animal.id" class="card1 col">
           <div  class="card1 card h-100">
-            <img src="animal.foto" class="foto" alt="Foto do animal" />
+            <img :src="animal.foto" class="foto" alt="Foto do animal" />
             <div class="card-body">
               <h5 class="card-title">{{ animal.nome }}</h5>
               <p class="card-text">{{ animal.raca }}</p>
