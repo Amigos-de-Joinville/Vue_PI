@@ -21,10 +21,10 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               style="padding-top: 100px"
               class="p-5 text-center bg-light"
             >
-              <h1 class="mb-0 h4">This is a long title of the article</h1>
+              <h1 class="mb-0 h4">O direito dos animais</h1>
             </div>
             <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg"
+              src="https://oabrn.org.br/storage/posts/lW9efdHiPevpBhPJA9GXr1j9Ap9Fz1Q9J69HHiAo.png"
               class="img-fluid shadow-2-strong rounded-5 mb-4"
               alt=""
             />
@@ -38,8 +38,8 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                   alt=""
                   loading="lazy"
                 />
-                <span> Published <u>15.07.2020</u> by</span>
-                <a href="" class="text-dark">Anna</a>
+                <span> Publicado em <u>15.07.2023</u> by </span>
+                <a href="" class="text-dark">Ana</a>
               </div>
 
               <div class="col-lg-6 text-center text-lg-end">
@@ -75,65 +75,67 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
           <!--Section: Text-->
           <section>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-              sapiente molestias consectetur. Fuga nulla officia error placeat
-              veniam, officiis rerum laboriosam ullam molestiae magni velit
-              laborum itaque minima doloribus eligendi! Lorem ipsum, dolor sit
-              amet consectetur adipisicing elit. Optio sapiente molestias
-              consectetur. Fuga nulla officia error placeat veniam, officiis
-              rerum laboriosam ullam molestiae magni velit laborum itaque minima
-              doloribus eligendi!
+              Na perspectiva da sociologia, o direito dos animais pode ser
+              abordado como parte do estudo das relações sociais entre
+              diferentes grupos e categorias de seres vivos. A relação entre os
+              seres humanos e os animais pode ser analisada sob diversas lentes
+              sociológicas.
             </p>
 
-            <p><strong>Optio sapiente molestias consectetur?</strong></p>
+            <p><strong>Características a serem observadas:</strong></p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              architecto ex ab aut tempora officia libero praesentium, sint id
-              magnam eius natus unde blanditiis. Autem adipisci totam sit
-              consequuntur eligendi.
+              <strong>1 - Antropocentrismo: </strong>Historicamente, muitas
+              sociedades adotaram uma visão antropocêntrica, colocando os seres
+              humanos no centro e considerando os animais como recursos a serem
+              utilizados para atender às necessidades humanas. Isso pode ser
+              interpretado como uma expressão das estruturas de poder e controle
+              presentes na sociedade.
+            </p>
+            <p>
+              <strong>2 - Estratificação Social:</strong>A forma como os
+              diferentes estratos sociais interagem com os animais pode revelar
+              desigualdades e padrões de consumo. Por exemplo, práticas como a
+              caça esportiva podem estar associadas a certas classes sociais,
+              enquanto a exploração de animais para alimentação pode ser
+              influenciada por fatores econômicos.
+            </p>
+            <p>
+              <strong>3 - Mudanças Culturais: </strong> A evolução das atitudes
+              em relação aos animais ao longo do tempo pode ser estudada como
+              parte das mudanças culturais. À medida que as sociedades se
+              desenvolvem, as percepções sobre os direitos dos animais podem ser
+              influenciadas por fatores culturais, educacionais e econômicos.
+            </p>
+            <p>
+              <strong>4 - Conflitos de Interesses: </strong> A proteção dos
+              direitos dos animais muitas vezes envolve conflitos de interesses
+              entre grupos com diferentes perspectivas. Por exemplo, indústrias
+              que exploram animais para fins lucrativos podem resistir a
+              regulamentações que visam o bem-estar animal, destacando as
+              tensões entre interesses econômicos e ética.
             </p>
 
             <p class="note note-light">
-              <strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Optio odit consequatur porro sequi ab distinctio
-              modi. Rerum cum dolores sint, adipisci ad veritatis laborum eaque
-              illum saepe mollitia ut voluptatum.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, libero repellat molestiae aperiam laborum aliquid
-              atque magni nostrum, inventore perspiciatis possimus quia incidunt
-              maiores molestias eaque nam commodi! Magnam, labore.
+              <strong>Nota:</strong> A sociologia fornece ferramentas analíticas
+              para examinar como as práticas sociais, estruturas de poder e
+              valores culturais influenciam as atitudes e comportamentos em
+              relação aos animais. Entender esses elementos é fundamental para
+              abordar questões éticas e sociais relacionadas aos direitos dos
+              animais.
             </p>
 
             <img
-              src="https://mdbootstrap.com/img/new/slides/041.jpg"
+              src="https://www.al.sp.gov.br/repositorio/noticia/N-12-2022/fg294019.jpg"
               class="img-fluid shadow-1-strong rounded-5 mb-4"
               alt=""
             />
-
-            <ul>
-              <li>Lorem</li>
-              <li>Ipsum</li>
-              <li>Dolor</li>
-              <li>Sit</li>
-              <li>Amet</li>
-            </ul>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-              temporibus nulla voluptatibus accusantium sapiente doloremque.
-              Doloribus ratione laboriosam culpa. Ab officiis quidem, debitis
-              nostrum in accusantium dolore veritatis eius est?
-            </p>
           </section>
           <!--Section: Text-->
 
           <!--Section: Share buttons-->
           <section class="text-center border-top border-bottom py-4 mb-4">
-            <p><strong>Share with your friends:</strong></p>
+            <p><strong>Compartilhe com os seus amigos!</strong></p>
 
             <button
               type="button"
@@ -185,10 +187,14 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                   ><i class="fab fa-linkedin me-1"></i
                 ></a>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio est ab iure inventore dolorum consectetur?
-                  Molestiae aperiam atque quasi consequatur aut? Repellendus
-                  alias dolor ad nam, soluta distinctio quis accusantium!
+                  Anna Maria Doe, uma apaixonada defensora dos direitos dos
+                  animais, combina seu profundo conhecimento jurídico com uma
+                  dedicação inabalável à causa. Com uma abordagem legal centrada
+                  na ética, ela busca constantemente maneiras de promover leis e
+                  regulamentações que garantam o bem-estar e os direitos
+                  fundamentais dos animais. Sua expertise torna-a uma voz
+                  influente no ativismo, inspirando mudanças significativas na
+                  proteção dos nossos companheiros de planeta.
                 </p>
               </div>
             </div>
@@ -197,7 +203,7 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
 
           <!--Section: Comments-->
           <section class="border-bottom mb-3">
-            <p class="text-center"><strong>Comments: 3</strong></p>
+            <p class="text-center"><strong>Comentários: 3</strong></p>
 
             <!-- Comment -->
             <div class="row mb-4">
@@ -212,10 +218,12 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               <div class="col-10">
                 <p class="mb-2"><strong>Marta Dolores</strong></p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio est ab iure inventore dolorum consectetur?
-                  Molestiae aperiam atque quasi consequatur aut? Repellendus
-                  alias dolor ad nam, soluta distinctio quis accusantium!
+                  Que artigo esclarecedor! A abordagem sobre os direitos dos
+                  animais destaca a necessidade urgente de repensarmos nossas
+                  práticas e promovermos uma coexistência mais justa. É
+                  inspirador ver como as mudanças legais podem ser impulsionadas
+                  por defensores apaixonados como nós, comprometidos com o
+                  bem-estar de todos os seres vivos.
                 </p>
               </div>
             </div>
@@ -233,10 +241,12 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               <div class="col-10">
                 <p class="mb-2"><strong>Valeria Groove</strong></p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio est ab iure inventore dolorum consectetur?
-                  Molestiae aperiam atque quasi consequatur aut? Repellendus
-                  alias dolor ad nam, soluta distinctio quis accusantium!
+                  Fiquei impressionado com a análise das dinâmicas sociais
+                  envolvidas nos direitos dos animais. A sociologia desempenha
+                  um papel crucial nessa discussão, revelando as complexidades
+                  das relações entre humanos e animais. Vamos continuar a
+                  disseminar essa conscientização e promover uma cultura que
+                  respeite e proteja nossos amigos de quatro patas.
                 </p>
               </div>
             </div>
@@ -254,10 +264,12 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               <div class="col-10">
                 <p class="mb-2"><strong>Antonia Velez</strong></p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio est ab iure inventore dolorum consectetur?
-                  Molestiae aperiam atque quasi consequatur aut? Repellendus
-                  alias dolor ad nam, soluta distinctio quis accusantium!
+                  O perfil da Anna Maria Doe é incrível! Sua combinação de
+                  conhecimento jurídico e paixão pelo ativismo animal destaca o
+                  papel crucial que os profissionais do direito desempenham
+                  nessa luta. Estou ansioso para ver como suas iniciativas
+                  continuarão a moldar um futuro mais ético para todos os
+                  habitantes do nosso planeta.
                 </p>
               </div>
             </div>
@@ -266,20 +278,20 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
 
           <!--Section: Reply-->
           <section>
-            <p class="text-center"><strong>Leave a reply</strong></p>
+            <p class="text-center"><strong>Deixe uma mensagem</strong></p>
 
             <form>
               <!-- Name input -->
               <div class="form-outline mb-4">
                 <input type="text" id="form4Example1" class="form-control" />
-                <label class="form-label" for="form4Example1">Name</label>
+                <label class="form-label" for="form4Example1">Nome</label>
               </div>
 
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form4Example2" class="form-control" />
                 <label class="form-label" for="form4Example2"
-                  >Email address</label
+                  >Email</label
                 >
               </div>
 
@@ -290,7 +302,7 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                   id="form4Example3"
                   rows="4"
                 ></textarea>
-                <label class="form-label" for="form4Example3">Text</label>
+                <label class="form-label" for="form4Example3">Texto</label>
               </div>
 
               <!-- Checkbox -->
@@ -303,7 +315,7 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                   checked
                 />
                 <label class="form-check-label" for="form4Example4">
-                  Send me a copy of this comment
+                  Envie-me uma cópia desta mensagem.
                 </label>
               </div>
 
@@ -357,17 +369,14 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
 
             <!--Section: Video-->
             <section class="text-center">
-              <h5 class="mb-4">
-                Veterinária explica como adotar um animal de estimação de forma
-                responsável
-              </h5>
+              <h5 class="mb-4">DIREITO ANIMAL - Supremo Cast #51</h5>
 
               <div
                 class="embed-responsive embed-responsive-16by9 shadow-4-strong"
               >
                 <iframe
                   class="embed-responsive-item rounded-5"
-                  src="https://www.youtube.com/embed/MLKJBMl3FSo"
+                  src="https://www.youtube.com/embed/MglbN7FberE"
                   allowfullscreen
                 ></iframe>
               </div>

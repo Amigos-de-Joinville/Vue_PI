@@ -2,10 +2,10 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
     <div class="container">
       <img
-        src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png"
-        height="70"
-        alt=""
-        loading="lazy"
+        src="@/assets/images/logo2.png"
+        class="img-fluid"
+        alt="Sample image"
+        style="width: 13% "
       />
       <button
         class="navbar-toggler ps-0"
@@ -30,12 +30,14 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/blog">Novidade</a>
           </li>
-        
+
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/profile">Perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#contact">Sobre nós</a>
+            <a class="nav-link" aria-current="page" href="#contact"
+              >Sobre nós</a
+            >
           </li>
         </ul>
 
@@ -83,7 +85,7 @@
 /* Color of the navbar AFTER scroll */
 .navbar-scroll,
 .navbar-scrolled {
-  background-color: #f7559a ;
+  background-color: #f7559a;
 }
 
 /* An optional height of the navbar AFTER scroll */
