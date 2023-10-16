@@ -290,9 +290,7 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form4Example2" class="form-control" />
-                <label class="form-label" for="form4Example2"
-                  >Email</label
-                >
+                <label class="form-label" for="form4Example2">Email</label>
               </div>
 
               <!-- Message input -->
@@ -320,8 +318,12 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               </div>
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
-                Publish
+              <button
+                type="submit"
+                style="background-color: #f7559a; border: #f7559a"
+                class="btn btn-primary btn-block mb-4"
+              >
+                Publicar
               </button>
             </form>
           </section>
@@ -337,8 +339,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
             <section class="text-center border-bottom pb-4 mb-4">
               <div class="bg-image hover-overlay ripple mb-4">
                 <img
-                  src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.webp"
+                  src="https://www.petz.com.br/blog/wp-content/uploads/2019/10/caes-gatos-3-1280x720.jpg"
                   class="img-fluid"
+                  style="width: 100%"
                 />
                 <a
                   href="https://mdbootstrap.com/docs/standard/"
@@ -350,19 +353,22 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                   ></div>
                 </a>
               </div>
-              <h5>Material Design for Bootstrap 5</h5>
+              <h5>Cães e gatos: saiba como introduzir um novo pet à família</h5>
 
               <p>
-                500+ components, free templates, 1-min installation, extensive
-                tutorial, huge community. MIT license - free for personal &
-                commercial use
+                O primeiro contato será sempre uma incógnita. Assim como as
+                pessoas, os pets demonstram uma enorme variedade de
+                personalidades, hábitos e predisposições, tendo bons e maus
+                dias. No entanto, tendem a reagir sem pensar e não possuem senso
+                no que se refere ao sentimento dos outros.
               </p>
               <a
                 role="button"
+                style="background-color: #f7559a; border: #f7559a"
                 class="btn btn-primary"
-                href="https://mdbootstrap.com/docs/standard/"
+                href="https://www.petz.com.br/blog/pets/caes-e-gatos/"
                 target="_blank"
-                >Download for free<i class="fas fa-download ms-2"></i
+                >Leia mais<i class="fas fa-download ms-2"></i
               ></a>
             </section>
             <!--Section: Ad-->

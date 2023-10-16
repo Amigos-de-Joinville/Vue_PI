@@ -25,10 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="/listanimais">Home</a>
+            <a class="nav-link" aria-current="page" href="/listanimais">Animais</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/blog">Novidade</a>
+            <a class="nav-link" aria-current="page" href="/blog">Blog</a>
           </li>
 
           <li class="nav-item">

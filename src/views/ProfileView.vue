@@ -24,34 +24,34 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                   class="img-fluid my-5"
                   style="width: 80px"
                 />
-                <h5>Marie Horwitz</h5>
-                <p>Web Designer</p>
+                <h5>Maria da Rosa</h5>
+                <p>Amante de animais</p>
                 <i class="far fa-edit mb-5"></i>
               </div>
               <div class="col-md-8">
                 <div class="card-body p-4">
-                  <h6>Information</h6>
+                  <h6>Informação</h6>
                   <hr class="mt-0 mb-4" />
                   <div class="row pt-1">
                     <div class="col-6 mb-3">
                       <h6>Email</h6>
-                      <p class="text-muted">info@example.com</p>
+                      <p class="text-muted">maria@rosa.com</p>
                     </div>
                     <div class="col-6 mb-3">
-                      <h6>Phone</h6>
-                      <p class="text-muted">123 456 789</p>
+                      <h6>Celular</h6>
+                      <p class="text-muted">47 988093456</p>
                     </div>
                   </div>
-                  <h6>Projects</h6>
+                  <h6>Adoções</h6>
                   <hr class="mt-0 mb-4" />
                   <div class="row pt-1">
                     <div class="col-6 mb-3">
-                      <h6>Recent</h6>
-                      <p class="text-muted">Lorem ipsum</p>
+                      <h6>Recentes</h6>
+                      <p class="text-muted">2 animais adotados</p>
                     </div>
                     <div class="col-6 mb-3">
-                      <h6>Most Viewed</h6>
-                      <p class="text-muted">Dolor sit amet</p>
+                      <h6>Recente visualizações</h6>
+                      <p class="text-muted"> +1 Laila</p>
                     </div>
                   </div>
                   <div class="d-flex justify-content-start">
