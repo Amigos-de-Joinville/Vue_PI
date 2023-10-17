@@ -76,5 +76,8 @@ onMounted(() => {
   padding-top: 10px;
  
 }
+.foto{
+  height:300px;
+}
 
 </style>

@@ -83,7 +83,7 @@
             </div>
 
             <div class="text-center text-lg-start mt-4 pt-2">
-              <router-link to="/listanimais" custom v-slot="{ navigate }">
+              <router-link to="/home" custom v-slot="{ navigate }">
                 <button
                   @click="navigate"
                   role="link"
