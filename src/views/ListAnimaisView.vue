@@ -38,7 +38,7 @@ onMounted(() => {
             <div class="card-footer">
               <small class="text-muted">Atualizado há 2 dias</small>
             </div>
-            <ButtomComp></ButtomComp>
+            <ButtomComp :animalId="animal.id"></ButtomComp>
           </div>
         </div>
       </div>
