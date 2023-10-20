@@ -34,11 +34,6 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/profile">Perfil</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#contact"
-              >Sobre nós</a
-            >
-          </li>
         </ul>
 
         <ul class="navbar-nav flex-row">
