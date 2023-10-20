@@ -12,6 +12,7 @@ const buscarAnimais = async () => {
     const resposta = await axios.get(
       "https://django-pi-j444-dev.fl0.io/animais/"
     );
+    console.log(resposta.data)
     animais.value = resposta.data;
   } catch (erro) {
     console.error(erro);
@@ -38,7 +39,7 @@ onMounted(() => {
             <div class="card-footer">
               <small class="text-muted">Atualizado há 2 dias</small>
             </div>
-            <!-- <ButtomComp :animalId="animal.id"></ButtomComp> -->
+            <ButtomComp :id="animal.id" ></ButtomComp>
           </div>
         </div>
       </div>
