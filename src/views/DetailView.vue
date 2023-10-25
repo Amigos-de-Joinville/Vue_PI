@@ -36,7 +36,7 @@ onMounted(mostrarDetalhes(route.params.id));
 </script>
 
 <template>
-  <CabecalhoComp></CabecalhoComp>
+import CabecalhoComp from "@/components/CabecalhoComp.vue";
 
   <main style="padding-top: 250px" class="mt-5">
     <div v-for="animal in animalSelecionado" :key="animal.id" class="container">

@@ -30,6 +30,9 @@
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="/listanimais">Animais</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/cadastro">Cadastrar</a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/profile">Perfil</a>

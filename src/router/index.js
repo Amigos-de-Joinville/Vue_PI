@@ -4,6 +4,7 @@ import ProfileView from "@/views/ProfileView.vue";
 import ListAnimaisView from "@/views/ListAnimaisView.vue";
 import DetailView from "@/views/DetailView.vue";
 import HomeView from "@/views/HomeView.vue";
+import CadastroView from "@/views/CadastroView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: "/profile",
       name: "profile",
       component: ProfileView,
+    },
+    {
+      path: "/cadastro",
+      name: "cadastro",
+      component: CadastroView,
     },
   ],
 });
