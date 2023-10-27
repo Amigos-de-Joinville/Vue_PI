@@ -70,56 +70,40 @@ const showForm = ref(false);
         />
         <h2>Checkout form</h2>
         <p class="lead">
-          Below is an example form built entirely with Bootstrap's form
-          controls. Each required form group has a validation state that can be
-          triggered by attempting to submit the form without completing it.
+          Nesta seção, você tem o controle total sobre a experiência, podendo
+          cadastrar e gerenciar informações sobre os animais que fazem parte da
+          nossa comunidade. Seja um bichinho fofo em busca de um lar amoroso ou
+          uma história inspiradora de resgate, aqui é o lugar onde você molda a
+          narrativa. Vamos juntos criar um ambiente online cheio de histórias
+          peludas e patas carentes de carinho. Vamos começar a cadastrar esses
+          amiguinhos adoráveis!
         </p>
       </div>
 
       <div class="row">
         <div class="col-md-4 order-md-2 mb-4">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-muted">Your cart</span>
-            <span class="badge badge-secondary badge-pill">3</span>
+            <span class="text-muted">Suas adoções</span>
+            <span class="badge badge-secondary badge-pill">2</span>
           </h4>
           <ul class="list-group mb-3">
             <li
               class="list-group-item d-flex justify-content-between lh-condensed"
             >
               <div>
-                <h6 class="my-0">Product name</h6>
-                <small class="text-muted">Brief description</small>
+                <h6 class="my-0">Paloma</h6>
+                <small class="text-muted">Experiência boa</small>
               </div>
-              <span class="text-muted">$12</span>
+              <span class="text-muted">1 mês</span>
             </li>
             <li
               class="list-group-item d-flex justify-content-between lh-condensed"
             >
               <div>
-                <h6 class="my-0">Second product</h6>
-                <small class="text-muted">Brief description</small>
+                <h6 class="my-0">Fred</h6>
+                <small class="text-muted">Meu primeiro animal</small>
               </div>
-              <span class="text-muted">$8</span>
-            </li>
-            <li
-              class="list-group-item d-flex justify-content-between lh-condensed"
-            >
-              <div>
-                <h6 class="my-0">Third item</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between bg-light">
-              <div class="text-success">
-                <h6 class="my-0">Promo code</h6>
-                <small>EXAMPLECODE</small>
-              </div>
-              <span class="text-success">-$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$20</strong>
+              <span class="text-muted">2 anos</span>
             </li>
           </ul>
 
@@ -196,7 +180,7 @@ const showForm = ref(false);
                 <label for="state">Cor</label>
                 <select class="custom-select d-block w-100" id="state" required>
                   <option value="">Selecione</option>
-                  <option>Frajola</option>
+                  <option>Preto</option>
                   <option>Branco</option>
                   <option>Laranja</option>
                 </select>
@@ -204,7 +188,6 @@ const showForm = ref(false);
                   Please provide a valid state.
                 </div>
               </div>
-        
             </div>
             <hr class="mb-4" />
 
@@ -297,8 +280,8 @@ const showForm = ref(false);
   justify-content: space-around;
 }
 .botao {
-    background-color: #f7559a ;
-    color: antiquewhite;
+  background-color: #f7559a;
+  color: antiquewhite;
 }
 
 .footerButtons {
