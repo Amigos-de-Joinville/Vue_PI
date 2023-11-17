@@ -10,7 +10,7 @@ const animais = ref([]);
 const buscarAnimais = async () => {
   try {
     const resposta = await axios.get(
-      "https://django-pi-j444-dev.fl0.io/animais/"
+      "https://django-pi-dev-rxrf.4.us-1.fl0.io/api/animais/"
     );
     console.log(resposta.data)
     animais.value = resposta.data;

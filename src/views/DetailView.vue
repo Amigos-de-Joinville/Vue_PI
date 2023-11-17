@@ -12,7 +12,7 @@ const animalSelecionado = ref();
 const buscarAnimais = async () => {
   try {
     const resposta = await axios.get(
-      "https://django-pi-j444-dev.fl0.io/animais/"
+      "https://django-pi-dev-rxrf.4.us-1.fl0.io/api/animais/"
     );
     animais.value = resposta.data;
   } catch (erro) {
@@ -22,7 +22,7 @@ const buscarAnimais = async () => {
 
 const mostrarDetalhes = async (cod) => {
   const resposta = await axios.get(
-    "https://django-pi-j444-dev.fl0.io/animais/"
+    "https://django-pi-dev-rxrf.4.us-1.fl0.io/api/animais/"
   );
   animais.value = resposta.data;
 
@@ -36,8 +36,7 @@ onMounted(mostrarDetalhes(route.params.id));
 </script>
 
 <template>
-import CabecalhoComp from "@/components/CabecalhoComp.vue";
-
+<CabecalhoComp></CabecalhoComp>
   <main style="padding-top: 250px" class="mt-5">
     <div v-for="animal in animalSelecionado" :key="animal.id" class="container">
       <!-- Mostrar lista de animais -->
