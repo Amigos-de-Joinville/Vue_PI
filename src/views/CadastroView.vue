@@ -1,17 +1,23 @@
 <script setup>
-import { ref, reactive } from "vue";
-import imageService from "../services/images.js";
-import animaisService from "../services/animal.js";
+import { ref, reactive, onMounted } from "vue";
 import CabecalhoComp from "@/components/CabecalhoComp.vue";
+import imageService from "@/services/images.js";
+import animalService from "@/services/animais.js";
+import especieService from "@/services/especies.js";
+import racaService from "@/services/racas.js";
+import corService from "@/services/cores.js";
 
+const especies = ref([]);
+const racas = ref([]);
+const cores = ref([]);
 const coverUrl = ref("");
 const file = ref(null);
 const currentAnimal = reactive({
   nome: "",
+  descricao: "",
   especie: "",
   raca: "",
   cor: "",
-  descricao: "",
 });
 
 function onFileChange(e) {
@@ -21,18 +27,34 @@ function onFileChange(e) {
 
 async function save() {
   const image = await imageService.uploadImage(file.value);
-  currentAnimal.cover_attachment_key = image.attachment_key;
-  await animaisService.saveAnimal(currentAnimal);
+  currentAnimal.foto_attachment_key = image.attachment_key;
+  await animalService.saveMovie(currentAnimal);
   Object.assign(currentAnimal, {
+    id: "",
     nome: "",
+    descricao: "",
     especie: "",
     raca: "",
     cor: "",
-    descricao: "",
-    cover_attachment_key: "",
+    foto_attachment_key: "",
   });
   showForm.value = false;
 }
+
+onMounted(async () => {
+  const data = await especieService.getAllEspecies();
+  especies.value = data;
+});
+
+onMounted(async () => {
+  const data = await racaService.getAllRacas();
+  racas.value = data;
+});
+
+onMounted(async () => {
+  const data = await corService.getAllCores();
+  cores.value = data;
+});
 
 const showForm = ref(false);
 </script>
@@ -80,7 +102,7 @@ const showForm = ref(false);
         </p>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-4 order-md-2 mb-4">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Suas adoções</span>
@@ -120,153 +142,36 @@ const showForm = ref(false);
             </div>
           </form>
         </div>
-        <div class="col-md-8 order-md-1">
-          <form class="needs-validation" novalidate>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">Nome do animal</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  placeholder=""
-                  value=""
-                  required
-                />
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Descrição</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  placeholder=""
-                  value=""
-                  required
-                />
-                <div class="invalid-feedback">Valid last name is required.</div>
-              </div>
-            </div>
+      </div> -->
+      <div class="form-item">
+        <input
+          type="text"
+          placeholder="Título"
+          id="nome"
+          v-model="currentAnimal.nome"
+        />
+        <label for="title">Nome</label>
+      </div>
 
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <label for="country">Especie</label>
-                <select
-                  class="custom-select d-block w-100"
-                  id="country"
-                  required
-                >
-                  <option value="">Selecione</option>
-                  <option>Cachorro</option>
-                  <option>Gato</option>
-                </select>
-                <div class="invalid-feedback">Selecione uma especie válida</div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="state">Raça</label>
-                <select class="custom-select d-block w-100" id="state" required>
-                  <option value="">Selecione</option>
-                  <option>labrador</option>
-                  <option>pastor alemão</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="state">Cor</label>
-                <select class="custom-select d-block w-100" id="state" required>
-                  <option value="">Selecione</option>
-                  <option>Preto</option>
-                  <option>Branco</option>
-                  <option>Laranja</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4" />
-
-            <button class="botao btn btn-lg btn-block" type="submit">
-              Confirmar cadastro
-            </button>
-          </form>
+      <div class="form-item">
+        <select v-model="currentMovie.genre">
+          <option disabled value="">Selecione um gênero</option>
+          <option v-for="genre in genres" :key="genre.id" :value="genre.id">
+            {{ genre.name }}
+          </option>
+        </select>
+        <label for="year">Gênero</label>
+      </div>
+      <div class="row">
+        <div id="preview">
+          <input type="file" @change="onFileChange" />
+          <div class="cover">
+            <img v-if="coverUrl" :src="coverUrl" />
+          </div>
         </div>
       </div>
     </div>
   </body>
-
-  <!-- <div class="p-4 sm:ml-64">
-    <div
-      class="p-4 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14"
-    >
-      <div class="flex justify-start mb-4">
-        <button class="btn btn-wide" @click="showForm = true">
-          <PlusBoxIcon />
-          Registrar Animal
-        </button>
-      </div>
-      <Card />
-      <modal :visible="showForm" @close="showForm = false">
-        <template #header>
-          <h3>Cadastro de Animais</h3>
-        </template>
-        <template #body>
-          <form class="form">
-            <div class="row mb-4">
-              <div id="preview" class="w-full text-center">
-                <input type="file" @change="onFileChange" />
-                <div class="cover">
-                  <img v-if="coverUrl" :src="coverUrl" />
-                </div>
-              </div>
-            </div>
-            <div class="form-item">
-              <input
-                type="text"
-                placeholder="Título"
-                id="title"
-                v-model="currentAnimal.nome"
-              />
-              <label for="title">Título</label>
-            </div>
-            <div class="form-item">
-              <input
-                type="text"
-                placeholder="Ano de lançamento"
-                id="year"
-                v-model="currentAnimal.year"
-              />
-              <label for="year">Ano de lançamento</label>
-            </div>
-            <div class="form-item">
-              <select v-model="currentAnimal.especie">
-                <option disabled value="">Selecione um gênero</option>
-                <option
-                  v-for="especie in especies"
-                  :key="especie.id"
-                  :value="especie.id"
-                >
-                  {{ especie.name }}
-                </option>
-              </select>
-              <label for="year">Gênero</label>
-            </div>
-          </form>
-        </template>
-        <template #footer>
-          <div class="footerButtons">
-            <button @click="showForm = false">Cancelar</button>
-            <button class="saveButton" @click="save">Salvar</button>
-          </div>
-        </template>
-      </modal>
-    </div>
-  </div> -->
 </template>
 
 <style scoped lang="css">
