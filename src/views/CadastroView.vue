@@ -28,7 +28,7 @@ function onFileChange(e) {
 async function save() {
   const image = await imageService.uploadImage(file.value);
   currentAnimal.foto_attachment_key = image.attachment_key;
-  await animalService.saveMovie(currentAnimal);
+  await animalService.saveAnimal(currentAnimal);
   Object.assign(currentAnimal, {
     id: "",
     nome: "",
@@ -90,7 +90,6 @@ const showForm = ref(false);
           class="img-fluid"
           alt="Sample image"
         />
-        <h2>Checkout form</h2>
         <p class="lead">
           Nesta seção, você tem o controle total sobre a experiência, podendo
           cadastrar e gerenciar informações sobre os animais que fazem parte da
@@ -102,71 +101,100 @@ const showForm = ref(false);
         </p>
       </div>
 
-      <!-- <div class="row">
-        <div class="col-md-4 order-md-2 mb-4">
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-muted">Suas adoções</span>
-            <span class="badge badge-secondary badge-pill">2</span>
-          </h4>
-          <ul class="list-group mb-3">
-            <li
-              class="list-group-item d-flex justify-content-between lh-condensed"
-            >
-              <div>
-                <h6 class="my-0">Paloma</h6>
-                <small class="text-muted">Experiência boa</small>
-              </div>
-              <span class="text-muted">1 mês</span>
-            </li>
-            <li
-              class="list-group-item d-flex justify-content-between lh-condensed"
-            >
-              <div>
-                <h6 class="my-0">Fred</h6>
-                <small class="text-muted">Meu primeiro animal</small>
-              </div>
-              <span class="text-muted">2 anos</span>
-            </li>
-          </ul>
-
-          <form class="card p-2">
-            <div class="input-group">
+      <div class="col-md-8 order-md-1">
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Nome do animal</label>
               <input
                 type="text"
                 class="form-control"
-                placeholder="Promo code"
+                id="nome"
+                placeholder="Totó"
+                required
+                v-model="currentAnimal.nome"
               />
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-secondary">Redeem</button>
-              </div>
+              <div class="invalid-feedback">Insira um nome válido</div>
             </div>
-          </form>
-        </div>
-      </div> -->
-      <div class="form-item">
-        <input
-          type="text"
-          placeholder="Título"
-          id="nome"
-          v-model="currentAnimal.nome"
-        />
-        <label for="title">Nome</label>
-      </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Descrição</label>
+              <input
+                type="text"
+                class="form-control"
+                id="descricao"
+                placeholder="Animal bem dócil, não morde e nem late muito."
+                required
+                v-model="currentAnimal.descricao"
+              />
+              <div class="invalid-feedback">Insira uma descrição</div>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="country">Especie</label>
+            <select
+              v-model="currentAnimal.especie"
+              class="custom-select d-block w-100"
+            >
+              <option value="">Selecione uma espécie:</option>
+              <option
+                v-for="especie in especies"
+                :key="especie.id"
+                :value="especie.id"
+              >
+                {{ especie.descricao }}
+              </option>
+            </select>
+            <div class="invalid-feedback">Selecione uma especie válida</div>
+          </div>
 
-      <div class="form-item">
-        <select v-model="currentMovie.genre">
-          <option disabled value="">Selecione um gênero</option>
-          <option v-for="genre in genres" :key="genre.id" :value="genre.id">
-            {{ genre.name }}
-          </option>
-        </select>
-        <label for="year">Gênero</label>
-      </div>
-      <div class="row">
-        <div id="preview">
-          <input type="file" @change="onFileChange" />
-          <div class="cover">
-            <img v-if="coverUrl" :src="coverUrl" />
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="country">Cor</label>
+              <select
+                v-model="currentAnimal.cor"
+                class="custom-select d-block w-100"
+              >
+                <option value="">Selecione uma cor:</option>
+                <option v-for="cor in cores" :key="cor.id" :value="cor.id">
+                  {{ cor.descricao }}
+                </option>
+              </select>
+              <div class="invalid-feedback">Selecione uma cor válida</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="country">Raça</label>
+                <select
+                  v-model="currentAnimal.raca"
+                  class="custom-select d-block w-100"
+                >
+                  <option value="">Selecione uma raça:</option>
+                  <option v-for="raca in racas" :key="raca.id" :value="raca.id">
+                    {{ raca.nome }}
+                  </option>
+                </select>
+                <div class="invalid-feedback">Selecione uma raça válida</div>
+              </div>
+
+              <div class="row">
+                <div id="preview">
+                  <input type="file" @change="onFileChange" />
+                  <div class="cover">
+                    <img v-if="coverUrl" :src="coverUrl" />
+                  </div>
+                </div>
+              </div>
+
+              <button class="botao btn btn-lg btn-block" type="submit" @click="save">
+                Confirmar cadastro
+              </button>
+              <button class="botao btn btn-lg btn-block" type="submit" @click="showForm = false">
+                Cancelar cadastro
+              </button>
+            </div>
           </div>
         </div>
       </div>

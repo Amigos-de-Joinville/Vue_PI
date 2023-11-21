@@ -8,7 +8,7 @@ class AnimalService {
   async saveAnimal(animal) {
     let response
     if (animal.id) {
-      response = await api.put(`/livros/${animal.id}/`, animal)
+      response = await api.put(`/animais/${animal.id}/`, animal)
     } else {
       response = await api.post('/animais/', animal)
     }
