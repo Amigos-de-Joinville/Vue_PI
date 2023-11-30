@@ -5,16 +5,11 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
 <template>
   <CabecalhoComp></CabecalhoComp>
   <header></header>
-  <!--Main Navigation-->
 
-  <!--Main layout-->
   <main class="mt-4 mb-5">
     <div class="container">
-      <!--Grid row-->
       <div class="row">
-        <!--Grid column-->
         <div class="col-md-8 mb-4">
-          <!--Section: Post data-mdb-->
           <section class="border-bottom mb-4">
             <div
               id="intro"
@@ -70,9 +65,7 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               </div>
             </div>
           </section>
-          <!--Section: Post data-mdb-->
 
-          <!--Section: Text-->
           <section>
             <p>
               Na perspectiva da sociologia, o direito dos animais pode ser
@@ -131,9 +124,6 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               alt=""
             />
           </section>
-          <!--Section: Text-->
-
-          <!--Section: Share buttons-->
           <section class="text-center border-top border-bottom py-4 mb-4">
             <p><strong>Compartilhe com os seus amigos!</strong></p>
 
@@ -162,9 +152,6 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               <i class="fas fa-comments me-2"></i>Add comment
             </button>
           </section>
-          <!--Section: Share buttons-->
-
-          <!--Section: Author-->
           <section class="border-bottom mb-4 pb-4">
             <div class="row">
               <div class="col-3">
@@ -199,13 +186,10 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               </div>
             </div>
           </section>
-          <!--Section: Author-->
 
-          <!--Section: Comments-->
           <section class="border-bottom mb-3">
             <p class="text-center"><strong>Comentários: 3</strong></p>
 
-            <!-- Comment -->
             <div class="row mb-4">
               <div class="col-2">
                 <img
@@ -227,8 +211,6 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                 </p>
               </div>
             </div>
-
-            <!-- Comment -->
             <div class="row mb-4">
               <div class="col-2">
                 <img
@@ -250,8 +232,6 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                 </p>
               </div>
             </div>
-
-            <!-- Comment -->
             <div class="row mb-4">
               <div class="col-2">
                 <img
@@ -274,26 +254,21 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               </div>
             </div>
           </section>
-          <!--Section: Comments-->
 
-          <!--Section: Reply-->
           <section>
             <p class="text-center"><strong>Deixe uma mensagem</strong></p>
 
             <form>
-              <!-- Name input -->
               <div class="form-outline mb-4">
                 <input type="text" id="form4Example1" class="form-control" />
                 <label class="form-label" for="form4Example1">Nome</label>
               </div>
 
-              <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form4Example2" class="form-control" />
                 <label class="form-label" for="form4Example2">Email</label>
               </div>
 
-              <!-- Message input -->
               <div class="form-outline mb-4">
                 <textarea
                   class="form-control"
@@ -303,7 +278,6 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                 <label class="form-label" for="form4Example3">Texto</label>
               </div>
 
-              <!-- Checkbox -->
               <div class="form-check d-flex justify-content-center mb-4">
                 <input
                   class="form-check-input me-2"
@@ -317,7 +291,6 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                 </label>
               </div>
 
-              <!-- Submit button -->
               <button
                 type="submit"
                 style="background-color: #f7559a; border: #f7559a"
@@ -327,15 +300,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
               </button>
             </form>
           </section>
-          <!--Section: Reply-->
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
         <div class="col-md-4 mb-4">
-          <!--Section: Sidebar-->
           <section class="sticky-top" style="top: 80px">
-            <!--Section: Ad-->
             <section class="text-center border-bottom pb-4 mb-4">
               <div class="bg-image hover-overlay ripple mb-4">
                 <img
@@ -371,9 +338,7 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                 >Leia mais<i class="fas fa-download ms-2"></i
               ></a>
             </section>
-            <!--Section: Ad-->
 
-            <!--Section: Video-->
             <section class="text-center">
               <h5 class="mb-4">DIREITO ANIMAL - Supremo Cast #51</h5>
 
@@ -387,14 +352,9 @@ import CabecalhoComp from "@/components/CabecalhoComp.vue";
                 ></iframe>
               </div>
             </section>
-            <!--Section: Video-->
           </section>
-          <!--Section: Sidebar-->
         </div>
-        <!--Grid column-->
       </div>
-      <!--Grid row-->
     </div>
   </main>
-  <!--Main layout-->
 </template>

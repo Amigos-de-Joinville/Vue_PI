@@ -101,7 +101,7 @@ const showForm = ref(false);
         </p>
       </div>
 
-      <div class="col-md-8 order-md-1">
+      <div class="col-md-8 center-order-md-1">
         <form class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -130,13 +130,15 @@ const showForm = ref(false);
             </div>
           </div>
         </form>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <label for="country">Especie</label>
+        <div class="inputs row">
+          <div class="col-md-3 mb-3">
+            <label for="country">Espécie</label>
             <select
               v-model="currentAnimal.especie"
-              class="custom-select d-block w-100"
+              class="form-select"
+              id="inputGroupSelect02"
             >
+              >
               <option value="">Selecione uma espécie:</option>
               <option
                 v-for="especie in especies"
@@ -146,15 +148,18 @@ const showForm = ref(false);
                 {{ especie.descricao }}
               </option>
             </select>
+
             <div class="invalid-feedback">Selecione uma especie válida</div>
           </div>
+          <div class="input-group mb-3"></div>
 
           <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
               <label for="country">Cor</label>
               <select
                 v-model="currentAnimal.cor"
-                class="custom-select d-block w-100"
+                class="form-select"
+                id="inputGroupSelect02"
               >
                 <option value="">Selecione uma cor:</option>
                 <option v-for="cor in cores" :key="cor.id" :value="cor.id">
@@ -165,11 +170,12 @@ const showForm = ref(false);
             </div>
 
             <div class="row">
-              <div class="col-md-4 mb-3">
+              <div class="col-md-3 mb-3">
                 <label for="country">Raça</label>
                 <select
                   v-model="currentAnimal.raca"
-                  class="custom-select d-block w-100"
+                  class="form-select"
+                  id="inputGroupSelect02"
                 >
                   <option value="">Selecione uma raça:</option>
                   <option v-for="raca in racas" :key="raca.id" :value="raca.id">
@@ -188,10 +194,18 @@ const showForm = ref(false);
                 </div>
               </div>
 
-              <button class="botao btn btn-lg btn-block" type="submit" @click="save">
+              <button
+                class="botao btn btn-lg btn-block"
+                type="submit"
+                @click="save"
+              >
                 Confirmar cadastro
               </button>
-              <button class="botao btn btn-lg btn-block" type="submit" @click="showForm = false">
+              <button
+                class="botao btn btn-lg btn-block"
+                type="submit"
+                @click="showForm = false"
+              >
                 Cancelar cadastro
               </button>
             </div>
@@ -248,5 +262,13 @@ const showForm = ref(false);
 #preview img {
   width: 200px;
   height: 270px;
+}
+
+.container {
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
 }
 </style>
