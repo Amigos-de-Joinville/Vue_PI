@@ -101,7 +101,9 @@ const showForm = ref(false);
         </p>
       </div>
 
-      <div class="col-md-8 center-order-md-1">
+      <div
+        class="justify-content-center align-items-center w-70 h-100center-order-md-1"
+      >
         <form class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -131,14 +133,13 @@ const showForm = ref(false);
           </div>
         </form>
         <div class="inputs row">
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 mb-3">
             <label for="country">Espécie</label>
             <select
               v-model="currentAnimal.especie"
               class="form-select"
               id="inputGroupSelect02"
             >
-              >
               <option value="">Selecione uma espécie:</option>
               <option
                 v-for="especie in especies"
@@ -148,67 +149,63 @@ const showForm = ref(false);
                 {{ especie.descricao }}
               </option>
             </select>
-
-            <div class="invalid-feedback">Selecione uma especie válida</div>
+            <div class="invalid-feedback">Selecione uma espécie válida</div>
           </div>
-          <div class="input-group mb-3"></div>
 
-          <div class="row">
-            <div class="col-md-3 mb-3">
-              <label for="country">Cor</label>
-              <select
-                v-model="currentAnimal.cor"
-                class="form-select"
-                id="inputGroupSelect02"
-              >
-                <option value="">Selecione uma cor:</option>
-                <option v-for="cor in cores" :key="cor.id" :value="cor.id">
-                  {{ cor.descricao }}
-                </option>
-              </select>
-              <div class="invalid-feedback">Selecione uma cor válida</div>
-            </div>
+          <div class="col-md-4 mb-3">
+            <label for="country">Cor</label>
+            <select
+              v-model="currentAnimal.cor"
+              class="form-select"
+              id="inputGroupSelect02"
+            >
+              <option value="">Selecione uma cor:</option>
+              <option v-for="cor in cores" :key="cor.id" :value="cor.id">
+                {{ cor.descricao }}
+              </option>
+            </select>
+            <div class="invalid-feedback">Selecione uma cor válida</div>
+          </div>
 
-            <div class="row">
-              <div class="col-md-3 mb-3">
-                <label for="country">Raça</label>
-                <select
-                  v-model="currentAnimal.raca"
-                  class="form-select"
-                  id="inputGroupSelect02"
-                >
-                  <option value="">Selecione uma raça:</option>
-                  <option v-for="raca in racas" :key="raca.id" :value="raca.id">
-                    {{ raca.nome }}
-                  </option>
-                </select>
-                <div class="invalid-feedback">Selecione uma raça válida</div>
+          <div class="col-md-4 mb-3">
+            <label for="country">Raça</label>
+            <select
+              v-model="currentAnimal.raca"
+              class="input form-select"
+              id="inputGroupSelect02"
+            >
+              <option value="">Selecione uma raça:</option>
+              <option v-for="raca in racas" :key="raca.id" :value="raca.id">
+                {{ raca.nome }}
+              </option>
+            </select>
+            <div class="invalid-feedback">Selecione uma raça válida</div>
+          </div>
+
+          <div class="justify-content-center align-items-center">
+            <div id="preview">
+              <input type="file" @change="onFileChange" />
+              <div class="cover">
+                <img v-if="coverUrl" :src="coverUrl" />
               </div>
-
-              <div class="row">
-                <div id="preview">
-                  <input type="file" @change="onFileChange" />
-                  <div class="cover">
-                    <img v-if="coverUrl" :src="coverUrl" />
-                  </div>
-                </div>
-              </div>
-
-              <button
-                class="botao btn btn-lg btn-block"
-                type="submit"
-                @click="save"
-              >
-                Confirmar cadastro
-              </button>
-              <button
-                class="botao btn btn-lg btn-block"
-                type="submit"
-                @click="showForm = false"
-              >
-                Cancelar cadastro
-              </button>
             </div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <button
+              class="botao btn btn-lg btn-block"
+              type="submit"
+              @click="save"
+            >
+              Confirmar cadastro
+            </button>
+            <button
+              class="botao btn btn-lg btn-block"
+              type="submit"
+              @click="showForm = false"
+            >
+              Cancelar cadastro
+            </button>
           </div>
         </div>
       </div>
@@ -229,6 +226,10 @@ const showForm = ref(false);
 .botao {
   background-color: #f7559a;
   color: antiquewhite;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
 }
 
 .footerButtons {
@@ -266,9 +267,5 @@ const showForm = ref(false);
 
 .container {
   align-items: center;
-}
-
-.inputs {
-  display: flex;
 }
 </style>
