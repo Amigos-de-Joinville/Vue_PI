@@ -5,7 +5,7 @@
         src="@/assets/images/logo2.png"
         class="img-fluid"
         alt="Sample image"
-        style="width: 13% "
+        style="width: 13%"
       />
       <button
         class="navbar-toggler ps-0"
@@ -25,17 +25,25 @@
       <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="/home">Home</a>
+            <a class="nav-link" aria-current="page" href="#">
+              <RouterLink class="text-white" to="/home">Home</RouterLink></a
+            >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="/listanimais">Animais</a>
+            <a class="nav-link" aria-current="page" href="#"
+              ><RouterLink class="text-white" to="/listanimais">Animais</RouterLink></a
+            >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="/cadastro">Cadastrar</a>
+            <a class="nav-link" aria-current="page" href="#"
+              ><RouterLink class="text-white" to="/cadastro">Cadastrar</RouterLink></a
+            >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/profile">Perfil</a>
+            <a class="nav-link" aria-current="page" href="#"
+              ><RouterLink class="text-white" to="/profile">Perfil</RouterLink></a
+            >
           </li>
         </ul>
 
@@ -95,4 +103,5 @@
 body {
   background-color: #eee;
 }
+
 </style>
