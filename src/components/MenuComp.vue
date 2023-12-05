@@ -31,18 +31,24 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="#"
-              ><RouterLink class="text-white" to="/listanimais">Animais</RouterLink></a
+              ><RouterLink class="text-white" to="/listanimais"
+                >Animais</RouterLink
+              ></a
             >
           </li>
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="#"
-              ><RouterLink class="text-white" to="/cadastro">Cadastrar</RouterLink></a
+              ><RouterLink class="text-white" to="/cadastro"
+                >Cadastrar</RouterLink
+              ></a
             >
           </li>
 
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#"
-              ><RouterLink class="text-white" to="/profile">Perfil</RouterLink></a
+              ><RouterLink class="text-white" to="/profile"
+                >Perfil</RouterLink
+              ></a
             >
           </li>
         </ul>
@@ -103,5 +109,4 @@
 body {
   background-color: #eee;
 }
-
 </style>
